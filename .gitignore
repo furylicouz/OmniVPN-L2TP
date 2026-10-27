@@ -1,0 +1,12 @@
+# Результаты сборки и сторонние инструменты
+windows/out/
+windows/tools/
+windows/test/*.exe
+windows/test/shots/
+macos/build/
+macos/build.log
+macos/tools/
+macos/shots/
+macos/release/*.exe
+macos/release/omnivpn-update.txt
+.DS_Store

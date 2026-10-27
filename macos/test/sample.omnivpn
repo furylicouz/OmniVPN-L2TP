@@ -1,0 +1,37 @@
+﻿# OmniVPN Connect — пример файла профилей.
+# Двойной щелчок по файлу добавит эти подключения в программу.
+
+[Офис Москва]
+server = vpn.example.ru
+balance = задержка
+domain = CORP
+dns = 192.168.10.11 192.168.10.12
+dnsdomain = corp.local
+psk = Пример-ключ 123
+routes = 192.168.88.17/24, 10.10.0.0/16
+user = user
+
+[Склад]
+server = 203.0.113.10
+psk = "  ключ с пробелами  "
+password = s3cret
+
+[Бухгалтерия]
+type = rdp
+host = 192.168.20.25
+user = CORP\user
+vpn = Офис
+fullscreen = нет
+
+[Сервер 1С]
+type = rdp
+host = 192.168.20.30:3390
+multimon = да
+
+[Терминальный сервер]
+type = rdp
+host = broker.corp.local
+domain = BRANCH
+collection = Office
+gateway = gw.example.ru:8443
+user = CORP\user
